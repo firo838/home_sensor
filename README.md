@@ -1,2 +1,2 @@
-# homeIoT_erec
-Erectric sensor for home IoT devices.
+# home_sensor
+Electric sensor for home IoT devices.
