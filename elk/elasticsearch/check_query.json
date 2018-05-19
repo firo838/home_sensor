@@ -1,0 +1,9 @@
+# Test query.
+# use curl command.
+{
+  "query": {
+    "query_string": {
+      "query": "A"
+    }
+  }
+}

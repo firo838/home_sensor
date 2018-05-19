@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="家庭に導入するIoTセンサー開発">
+	<meta name="viewport" content="width=device-width">
+	<title>home_sensor | 家庭に導入するIoTセンサー開発</title>
+	<link rel="stylesheet" media="all" href="docs/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="docs/js/script.js"></script>
+</head>
+
+<body id="top">
+	<div id="wrapper">
+
+		<div id="sidebar">
+			<div id="sidebarWrap">
+				<h1><img src="docs/images2/logo.png" width="300" height="300" alt="logo"></h1>
+				<nav id="mainnav">
+					<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+					<div class="panel">
+						<ul>
+							<li><a href="#top">TOP</a></li>
+							<li><a href="#sec01">Phylosophy</a></li>
+							<li><a href="#sec02">Deverop Environment</a></li>
+							<li><a href="#sec03">Requirements</a></li>
+							<li><a href="#sec04">Visualization</a></li>
+							<li><a href="#sec05">Design</a></li>
+							<li><a href="#sec06">Develop</a></li>
+							<li><a href="#sec07">Evalution</a></li>
+							<li><a href="#sec08">Referrence</a></li>
+							<li><a href="#sec09">Profile</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div id="content">
+			<p id="mainImg"><img src="docs/images2/mainImg.jpg" alt=""></p>
+			<!-- Phylosophy -->
+			<section id="sec01">
+				<header>
+					<h2><span>Phylosophy</span></h2>
+				</header>
+				<div class="innerS">
+					<p>このサイトでは「電子工作」・「プログラミング」・「ネットワーク」の技術を用いて自作IoTセンサーを導入することを目的とし，その制作過程を紹介するサイトです</p>
+					<p>=> githubのページは<a href="https://github.com/firo838/home_sensor">こちら</a></p>
+				</div>
+				<div class="innerSS">
+					<p>ICT(Internet Communication Technology)技術の伸展によって生活の利便性を向上している。</p>
+					<p>IoT(Internet of Things)は様々なモノをインターネットに接続し，</p>
+					<p>環境情報など様々なデータを取得し，蓄積・解析することで新たな発見を生み出し</p>
+					<p>より便利で快適な生活を送ることができる。</p>
+					<p>家電などの家庭用機器にIoTセンサを導入することは，少々ハードルが高い(家電の買い替えなどのコストが発生する)。</p>
+					<p>そこで，簡易な組込みシステムを開発することができるマイコンの「Arduino」を使用して</p>
+					<p>家庭にIoTセンサを導入しようと考えた。</p>
+				</div>
+			</section>
+			<!-- // Phylosophy -->
+			<!-- // Requirements -->
+			<section id="sec02">
+				<header>
+					<h2><span>Requirements</span></h2>
+				</header>
+				<div class="innerS">
+					<style>
+					table {
+						border-collapse: collapse;
+					}
+					td {
+						border: solid 1px;
+						padding: 0.5em;
+					}
+					</style>
+					
+					<table>
+						<tr>
+							<td>機器</td>
+							<td>名称</td>
+							<td>購入サイト</td>
+						</tr>
+						<tr>
+							<td>Arduino 本体 （互換品）</td>
+							<td>A</td>
+							<td><a href="https://www.amazon.co.jp/gp/product/B00E5WJSHK/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1">アマゾンリンク</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<p>今回センサを開発に使用したものを記載する</p>
+					<div class="article">
+						<img src="docs/images2/SainSmart_Arduino_Uno_.jpg" width="370" height="224" alt="">
+						<p>Arduino 本体 （互換品）</p>
+						<p><a href="https://www.amazon.co.jp/gp/product/B00E5WJSHK/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1">アマゾンリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/SainSmart_Arduino_Ethernet_Shield.jpg" width="370" height="224" alt="">
+						<p>Arduino Uno Ethernet Shield （互換品）</p>
+						<p><a href="https://www.amazon.co.jp/gp/product/B006J4FZTW/ref=ox_sc_act_title_4?ie=UTF8&psc=1&smid=A16L06BV5108TA">アマゾンリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>Arduinoシールド用ピンソケットのセット(R3対応)</p>
+						<p><a href="https://ssci.to/995">Switch Scienceリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>Arduino用バニラシールド基板ver.2(青)</p>
+						<p><a href="https://ssci.to/991">Switch Scienceリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>パネル基板付けイヤホンジャック【MJ352WO】</p>
+						<p><a href="https://www.marutsu.co.jp/pc/i/40976/">マルツリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>小型酸金抵抗(MOS) 3W 10Ω【MOS3C100J】</p>
+						<p><a href="https://www.marutsu.co.jp/pc/i/18270/">マルツリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>ビニル平行コード 黒 2.0sq【VFF黒2.0SQ】</p>
+						<p><a href="https://www.marutsu.co.jp/pc/i/8123/">マルツリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>ベター小型コードコネクタ(平形コード用)(ホワイト)【WH4515P】</p>
+						<p><a href="https://www.marutsu.co.jp/pc/i/594003/">マルツリンク</a></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>Arduino Studio</p>
+						<p><a href="https://www.marutsu.co.jp/pc/i/594003/">マルツリンク</a></p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Requirements -->
+			<!-- // Develop Environment -->
+			<section id="sec03">
+				<header>
+					<h2><span>Develop Environment</span></h2>
+				</header>
+				<div class="innerT">
+					<ul class="col4">
+						<li>
+							<p class="img"><img src="docs/images2/Arduino_IDE.png" width="168" height="168" alt=""></p>
+							<p>「Arduino IDE」</p>
+							<p>Version 1.8.3</p>
+						</li>
+						<li>
+							<p class="img"><img src="docs/images2/macos_x.jpg" width="175" height="175" alt=""></p>
+							<p>「macOS X」</p>
+							<p>開発用PC</p>
+						</li>
+						<li>
+							<p class="img"><img src="docs/images2/ubuntu.png" width="168" height="168" alt=""></p>
+							<p>「Ubuntu16.04」</p>
+							<p>サーバ用OS</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Develop Environment -->
+			<!-- // Visualization -->
+			<section id="sec04">
+				<header>
+					<h2><span>Visualization</span></h2>
+				</header>
+				<div class="innerS">
+					<p>以下のツールセットを使用した。これらはElastic社によって提供されている。</p>
+				</div>
+				<div class="innerF">
+					<ul class="col4">
+						<li>
+							<p class="img"><img src="docs/images2/logstash.png" width="168" height="168" alt=""></p>
+							<p>「Logstash」</p>
+							<p>ログ収集機能を持つ</p>
+							<p>設定ファイルを記述することで独自の形式のログを解析・パースすることができる</p>
+						</li>
+						<li>
+							<p class="img"><img src="docs/images2/elasticsearch.png" width="168" height="168" alt=""></p>
+							<p>「Elasticsearch」</p>
+							<p>全文検索エンジンを持つデータベース</p>
+						</li>
+						<li>
+							<p class="img"><img src="docs/images2/kibana.png" width="168" height="168" alt=""></p>
+							<p>「Kibana」</p>
+							<p>データベースと連携し，ウェブブラウザ上で可視化する事ができる</p>
+							<p>Logstash・Elasticsearchとともに使われることが多く，まとめて「Elastic Stack」とされる</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Visualization -->
+			<!-- // Design -->
+			<section id="sec05">
+				<header>
+					<h2><span>Design</span></h2>
+				</header>
+				<div class="innerFS">
+					<div class="article">
+						<p>全体概要</p>
+						<p>開発したセンサの導入時の概略イメージを示す。</p>
+						<div class="full"><img src="docs/images2/Overview.png" width="800" height="695" alt=""></div>
+						<p></p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>工事中・・・</p>
+					</div>
+				</div>
+			</section>
+			<!-- Design -->
+			<!-- Develop -->
+			<section id="sec06">
+				<header>
+					<h2><span>Develop</span></h2>
+				</header>
+				<div class="innerS">
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>作成したセンサの評価をしたいと思います</p>
+						<p>精度・安定性など</p>
+					</div>
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>工事中・・・</p>
+					</div>
+					<div class="article">
+						<p>展望</p>
+					</div>
+				</div>
+			</section>
+			<!-- // Develop -->
+			<!-- Evalution -->
+			<section id="sec07">
+				<header>
+					<h2><span>Evalution</span></h2>
+				</header>
+				<div class="inner">
+					<div class="article">
+						<img src="docs/images2/dummy_small.png" width="370" height="224" alt="">
+						<p>作成したセンサの評価をしたいと思います</p>
+						<p>評価は以下の観点からします</p>
+						<ol>
+							<li>精度</li>
+							<li>安定性</li>
+							<li>保守性</li>
+						</ol>
+					</div>
+					<div class="article">
+						<p>展望</p>
+						<ol>
+							<p>今後するべき改善点</p>
+							<p>ハードウェアの改善</p>
+								<li>新しいセンサの追加を容易にするため，接続部分のモジュール化</li>
+							<p>ソフトウェアの改善</p>
+								<li>SSL通信などを使用してグローバルなネットワークを使用した際のセキュリティ確保</li>
+								<li>Ethernet仕様時の通信開始安定性の改善</li>
+								<li>センサの値異常時やハードウェア故障時のエラー処理及び通知</li>
+							<p>活用方法</p>
+								<li>データの利活用に事例の調査と実装(統計などの手法を用いてどのような事が可能になるかなど)</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+			<!-- // Evalution -->
+			<!-- Refference -->
+			<section id="sec08">
+				<header>
+					<h2><span>Refference</span></h2>
+				</header>
+				<div class="innerS">
+							<p>Logstash</p>
+							<p>site:a</p>
+							<p>Elasticsearch</p>
+							<p>site:a</p>
+							<p>Kibana</p>
+							<p>site:a</p>
+							
+							<p>Arduino</p>
+							<p>site:a</p>
+				</div>
+			</section>
+			<!-- // Refference -->
+			<!-- Refference -->
+			<section id="sec98">
+				<header>
+					<h2><span>Profile</span></h2>
+				</header>
+				<div class="innerS">
+					<p>北陸先端科学技術大学院大学</p>
+					<p>博士前期課程</p>
+				</div>
+			</section>
+			<!-- // Refference -->
+
+			<footer id="footer">
+				<p>Copyright(c) 2017-2018 all right reserved.</p>
+				<p>このサイトにおける内容によって生じたいかなる事故などについて責任を負いません</p>
+			</footer>
+
+		</div>
+	</div>
+
+</body>
+</html>
