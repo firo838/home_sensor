@@ -11,7 +11,9 @@ Arduino IDEを使用してC言語風のプログラミング言語を使用してマイコンを簡単に開発す
 
 Arduino IDEを使用してArduino本体に転送する。
 
+'''
 home_sensor/scratch/home_sensor.ino/multi_sensor/multi_sensor.ino
+'''
 
 ## ELK Stack
 ELK（ELK Stack）とは，Elastic社が提供する「データ受信・整形」，「データ保存・解析・検索」，「データ可視化」を実現するオープンソースのツール群です。
@@ -53,11 +55,11 @@ curl -XGET "http://localhost:9200/home_sensor/_search" -data @check_query.json
 ```
 
 ## docs
-プロダクトのホームページのためのコンテンツ。
+プロダクト用ホームページのためのコンテンツ。
 
-完成イメージを掲載。
-
+'''
 https://firo838.github.io/home_sensor/
+'''
 
 ## docker
 Dockerはコンテナ型仮想化のためのツール。
