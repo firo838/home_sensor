@@ -57,7 +57,7 @@ curl -XGET "http://localhost:9200/home_sensor/_search" -data @check_query.json
 ## docs
 プロダクト用ホームページのためのコンテンツ。
 
-https://firo838.github.io/home_sensor/
+https://rosev838.github.io/home_sensor/
 
 ## docker
 Dockerはコンテナ型仮想化のためのツール。
